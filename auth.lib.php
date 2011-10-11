@@ -24,7 +24,7 @@ function checkAuth()
  	if (!isset($_SESSION['userId']) || !isset($_SESSION['data']) || getSessionData($_SESSION['userId']) != $_SESSION['data']) {
  		if(!isset($_POST['username']) || !isset($_POST['password']))
  			return 0;
- 		$username = addslashes($_POST['username']);
+ 		$username = mysql_real_escape_string($_POST['username']);
 		$query = "SELECT `user_id`,`user_name`,`user_password` FROM `digifort_users` WHERE `user_name`='$username'";
 		$result = mysql_query($query);
 		$row = mysql_fetch_array($result);
