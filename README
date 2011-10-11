@@ -9,7 +9,12 @@ To install and play the game, do this :
 * Now open the directory with any web browser and you should see the login page. But you need to register yourself first !
 * I haven't created a registration page (as this wasn't originally a standalone game but a part of a bigger framework). So goto the database, and insert an entry in the table digifort_users by filling the columns user_name, user_password (make sure to select MD5 version if inserting plain-text or directly put the MD5 of your password) and user_lastlogin (give any date).
 * Now login with that username and password and start playing!
+* Delete the dbstructure.sql, dbinserts.sql, README files if you're going to host it online.
 
 Note : Some of the levels use Pythong, so make sure Python is installed and properly configured in your system. Also check .htaccess.
 
 Note 2 : Please either disable PHP display_errors setting, or change the error level to display only Warning and Error. Otherwise, PHP might reveal some compromising information if it displays Notice level errors too.
+
+
+CREDITS : Some of the levels were contributed to by Sumit Ranjan (coderush) and Siddhant Sanyam (siddhant3s).
+
