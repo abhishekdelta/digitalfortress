@@ -1,0 +1,121 @@
+* {
+padding: 0;
+margin: 0 auto;
+} 
+
+body {
+margin:0 auto;
+padding: 0;
+font-size: .9em;
+background: #000;
+color: #aaa;
+font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+}
+
+a,a:link,a:active,a:visited { color: #EEEEEE; outline: none; text-decoration: none;  }
+a:hover { color: #0576C4;text-decoration:none; }
+img {border: none;}
+#navigation ul {  list-style-type: none; margin: 0; padding: 0px; color: #999;}	
+
+
+#wrap  {
+margin: 0 auto;
+width: 750px;
+}
+
+#header {
+background: #444444 url("../images/header.jpg") no-repeat;
+height: 205px;
+margin-right:-50px;
+}
+#header h1 {
+color: #fff;
+font-size: 1.6em;
+margin: 0;
+font-weight: 100;
+padding: 30px 0 0 30px;
+}
+#header h1 a { text-transform: none ;font-weight: 100; text-decoration: none; color : #eee; }
+#header h2 {
+color: #999;
+font-size: 1.3em;
+margin: 0;
+font-weight: 100;
+padding: 0 0 0 30px;
+}
+
+#content{text-align: justify; float:left;background:#444; width:100%; padding: 25px 25px 25px 25px; }
+#content h2 { font-size: 1.2em; font-weight: 600; padding-bottom: 10px;}
+#content h2 a { text-decoration: none; font-weight: 100; }
+
+#navigation{ float:left;width:99%;background:#222222;padding-left:10px; text-align: right;}
+#navigation ul {list-style-type : none; display : inline; list-style-image : none;}
+#navigation ul li { float : left;border-bottom: 1px solid #000; padding: 5px 40px 5px 0; background:#222 ; }
+#navigation li a:hover {i text-decoration: none;}
+
+.column {
+float: left;
+width: 180px;
+margin: 10px;
+color: #444;
+padding: 10px;
+background: #101010;
+}	
+.column a { color: #666; }
+.column a:hover { color: #aaa; }
+.column ul {padding-left: 10px;  list-style-type: square; color: #666; }
+
+#footer{ margin: 10px auto 0 auto; font-size: 0.8em; width: 98%; color: #999; padding: 5px; background: #222; }
+#footer a {color: #666; }
+
+#challenges
+{
+	margin-left : 0px;
+}
+.challengebox
+{
+	border : solid #AAAAAA 2px;
+	margin-top : 20px;
+		padding : 10px;
+}
+.challengebox a{
+display:block;
+}
+.challengebox a{
+color:white;
+}
+.challengebox:hover
+{
+	background-color : #1D6DAA;
+	border : solid #fff 2px;
+	color : #fff;
+
+}
+#innercontent{
+min-height:100px;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+#startcontent{
+
+min-height:100px;
+padding-top:20px;
+padding-bottom:20px;
+text-align:center;
+float:left;background:#444; width:100%; 
+}
+#startcontent h2 { font-size: 1.2em; font-weight: 600;}
+#startcontent h2 a { text-decoration: none; font-weight: 100; }
+#digit {
+height:50px;
+width:30px;
+}
+#digitbox{
+float:left;
+height:60px;
+width:50px;
+padding-top:12px;
+padding-left:10px;
+}
+

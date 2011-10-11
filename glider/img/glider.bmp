@@ -1,0 +1,35 @@
+#! /usr/bin/env python
+def decrypt(code):
+	if code==None:
+		return None
+	if len(code)!=3 :
+		return None
+	from hashlib import new
+	t=new("md5")
+	t.update(code)
+	return t.hexdigest()[-3:]
+
+
+import cgi
+import sys
+import os
+sys.stderr = sys.stdout
+form = cgi.FieldStorage()
+code=None
+if 'c' in form:
+	code=form['c'].value
+
+code = decrypt(code)
+
+if code:
+	print 'Content-type: image/x-ms-bmp\n'	
+	bmpdata= file('glider-source.bmp').read()
+	bmpinclude= "Decoded data:%s"%code
+	print bmpdata[:60]+bmpinclude+bmpdata[60+len(bmpinclude):]
+	
+else:
+	print 'Content-type: text/html\n\n'
+	print 'Error Encountered, the encrypted code was not found or was not in a proper format.'
+	
+
+

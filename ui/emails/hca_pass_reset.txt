@@ -1,0 +1,13 @@
+Subject: Hackland Central Bank (HCB) password reset request
+Dear {USERFULLNAME},
+
+You (or someone else) have requested to recover your password.
+However, currently we do not provide online password recovery due to security reasons.
+Please call our Customer Care along with your AuthID to reset your password. Please note that currently we accept calls from Hackland-based customers only.
+
+Your AuthID : {AUTHID}
+NOTE : DO NOT GIVE YOUR AUTH ID TO ANYONE. YOUR AUTH ID PLAYS A VERY IMPORTANT ROLE WHEN YOU USE OUR SERVICES.
+
+Regards,
+Hackland Central Bank
+

@@ -1,0 +1,9 @@
+AddHandler cgi-script  .php
+<FilesMatch "^\.ht">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<Files ~ "\.(script)$">
+  order allow,deny
+  deny from all
+</Files>	

