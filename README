@@ -1,0 +1,13 @@
+This is a game where users are supposed to try cracking the various levels by finding security loopholes and obtaining a pass key that needs to entered to complete the level. Levels have varied points depending on the difficulty.
+
+To install and play the game, do this :
+
+* Put all the source code in your webserver directory and make sure your webserver user (usually www-data or apache2) has all permissions over that folder.
+* Create a user 'digitalfortress' with some password in your mysql server and create a database 'digitalfortress' and grant all privileges to that user over this database.
+* The database dump is present in 2 files : dbstructure.sql and dbinserts.sql . Import both these files in your database.
+* Now edit mysql.inc.php and put the details of your database host, username, password and database name in the first 4 lines of that file (just replace some already existing default values)
+* Now open the directory with any web browser and you should see the login page. But you need to register yourself first !
+* I haven't created a registration page (as this wasn't originally a standalone game but a part of a bigger framework). So goto the database, and insert an entry in the table digifort_users by filling the columns user_name, user_password (make sure to select MD5 version if inserting plain-text or directly put the MD5 of your password) and user_lastlogin (give any date).
+* Now login with that username and password and start playing!
+
+Note : Some of the levels use Pythong, so make sure Python is installed and properly configured in your system. Also check .htaccess.
