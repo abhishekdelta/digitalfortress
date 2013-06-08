@@ -44,12 +44,15 @@ CREATE TABLE IF NOT EXISTS `digifort_levels` (
 
 CREATE TABLE IF NOT EXISTS `digifort_users` (
   `user_id` int(10) NOT NULL auto_increment,
+  `user_name` varchar(100) NOT NULL,
+  `user_password` varchar(100) NOT NULL,
+  `user_email` varchar(100) NOT NULL,
   `last_attempt_time` timestamp NOT NULL default '0000-00-00 00:00:00',
   `last_attempt_level` varchar(100) NOT NULL,
   `last_win_time` timestamp NOT NULL default '0000-00-00 00:00:00',
   `last_win_level` varchar(100) NOT NULL,
   `score` int(10) NOT NULL default '0',
-  `last_login` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `user_lastlogin` timestamp NOT NULL default '0000-00-00 00:00:00',
   `activated_time` timestamp NOT NULL default '0000-00-00 00:00:00',
   `time_counter` bigint(20) NOT NULL,
   PRIMARY KEY  (`user_id`)
